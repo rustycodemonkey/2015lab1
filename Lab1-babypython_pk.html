@@ -12147,7 +12147,7 @@ This can use LateX and</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="nb">enumerate</span><span class="p">(</span><span class="n">asquaredlist</span><span class="p">),</span><span class="nb">zip</span><span class="p">(</span><span class="n">alist</span><span class="p">,</span> <span class="n">asquaredlist</span><span class="p">)</span>
@@ -12163,13 +12163,13 @@ This can use LateX and</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[12]:</div>
+<div class="prompt output_prompt">Out[9]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(&lt;enumerate at 0x5c49730&gt;, [(1, 1), (2, 4), (3, 9), (4, 16), (5, 25)])</pre>
+<pre>(&lt;enumerate at 0x620caa0&gt;, [(1, 1), (2, 4), (3, 9), (4, 16), (5, 25)])</pre>
 </div>
 
 </div>
@@ -12189,7 +12189,7 @@ This can use LateX and</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">izip</span>
@@ -12206,13 +12206,13 @@ This can use LateX and</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[13]:</div>
+<div class="prompt output_prompt">Out[10]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;itertools.izip at 0x5c4ae18&gt;</pre>
+<pre>&lt;itertools.izip at 0x620aa28&gt;</pre>
 </div>
 
 </div>
@@ -12223,7 +12223,38 @@ This can use LateX and</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="nb">list</span><span class="p">(</span><span class="n">izip</span><span class="p">(</span><span class="n">alist</span><span class="p">,</span> <span class="n">asquaredlist</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[(1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">asquaredlist</span><span class="p">)</span>
@@ -12243,7 +12274,7 @@ This can use LateX and</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;enumerate object at 0x5c495a0&gt;
+<pre>&lt;enumerate object at 0x620ca00&gt;
 </pre>
 </div>
 </div>
@@ -12254,7 +12285,7 @@ This can use LateX and</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="p">[</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">asquaredlist</span><span class="p">)]</span>
@@ -12270,7 +12301,7 @@ This can use LateX and</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[15]:</div>
+<div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -12279,6 +12310,37 @@ This can use LateX and</p>
 <pre>[(0, 1), (1, 4), (2, 9), (3, 16), (4, 25)]</pre>
 </div>
 
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="nb">list</span><span class="p">(</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">asquaredlist</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[(0, 1), (1, 4), (2, 9), (3, 16), (4, 25)]
+</pre>
+</div>
 </div>
 
 </div>
@@ -12296,7 +12358,7 @@ This can use LateX and</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">linelengths</span><span class="o">=</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">line</span><span class="p">)</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;hamlet.txt&quot;</span><span class="p">)]</span><span class="c1">#poor code as we dont close the file</span>
@@ -12328,7 +12390,7 @@ This can use LateX and</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="nb">sum</span><span class="p">(</span><span class="n">linelengths</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">linelengths</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">linelengths</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">linelengths</span><span class="p">)</span>
@@ -12344,7 +12406,7 @@ This can use LateX and</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[17]:</div>
+<div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -12370,7 +12432,7 @@ This can use LateX and</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">hamletfile</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;hamlet.txt&quot;</span><span class="p">)</span>
@@ -12390,7 +12452,7 @@ This can use LateX and</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[18]:</div>
+<div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -12409,14 +12471,14 @@ This can use LateX and</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>One can use the <code>with</code> syntax which cretaes a context. The file closing is then done automatically for us.</p>
+<p>One can use the <code>with</code> syntax which creates a context. The file closing is then done automatically for us.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;hamlet.txt&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">hamletfile</span><span class="p">:</span>
@@ -12467,7 +12529,7 @@ This can use LateX and</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">hamlettext</span><span class="p">[:</span><span class="mi">1000</span><span class="p">]</span><span class="c1">#first 1000 characters from Hamlet.</span>
@@ -12551,7 +12613,7 @@ Nay, answer me: stand, and u
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">hamlettext</span><span class="p">[</span><span class="o">-</span><span class="mi">1000</span><span class="p">:]</span><span class="c1">#and last 1000 characters from Hamlet.</span>
@@ -12624,7 +12686,7 @@ ordnance is shot off.]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">hamlettokens</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">],</span> <span class="n">hamlettokens</span><span class="p">[:</span><span class="mi">4</span><span class="p">],</span> <span class="n">hamlettokens</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">hamlettokens</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
@@ -12655,7 +12717,100 @@ ordnance is shot off.]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">hamlettokens</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;HAMLET,&#39;, &#39;PRINCE&#39;, &#39;OF&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">hamlettokens</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;\xef\xbb\xbfXXXX&#39;, &#39;HAMLET,&#39;, &#39;PRINCE&#39;, &#39;OF&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">hamlettokens</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>﻿XXXX
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">hamlettokens</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
@@ -12671,7 +12826,7 @@ ordnance is shot off.]
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[23]:</div>
+<div class="prompt output_prompt">Out[25]:</div>
 
 
 
@@ -12688,7 +12843,7 @@ ordnance is shot off.]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">hamlettokens</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">8</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span><span class="c1">#get every 2nd world between the 2nd and the 9th: ie 2nd, 4th, 6th, and 8th</span>
@@ -12704,7 +12859,7 @@ ordnance is shot off.]
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[24]:</div>
+<div class="prompt output_prompt">Out[26]:</div>
 
 
 
@@ -12730,7 +12885,7 @@ ordnance is shot off.]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">mylist</span><span class="o">=</span><span class="p">[]</span>
@@ -12770,7 +12925,7 @@ ordnance is shot off.]
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[29]:</div>
+<div class="prompt output_prompt">Out[27]:</div>
 
 
 
@@ -12796,7 +12951,7 @@ ordnance is shot off.]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">adict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;one&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;three&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
@@ -12837,7 +12992,7 @@ ordnance is shot off.]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">mydict</span> <span class="o">=</span><span class="p">{</span><span class="n">k</span><span class="p">:</span><span class="n">v</span> <span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">alist</span><span class="p">,</span> <span class="n">asquaredlist</span><span class="p">)}</span>
@@ -12854,7 +13009,7 @@ ordnance is shot off.]
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[31]:</div>
+<div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -12880,7 +13035,7 @@ ordnance is shot off.]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="nb">dict</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
@@ -12896,7 +13051,7 @@ ordnance is shot off.]
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[32]:</div>
+<div class="prompt output_prompt">Out[30]:</div>
 
 
 
@@ -12921,7 +13076,7 @@ ordnance is shot off.]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
@@ -12934,7 +13089,7 @@ ordnance is shot off.]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">s</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">mydict</span><span class="p">)</span>
@@ -12966,7 +13121,7 @@ ordnance is shot off.]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
@@ -12982,7 +13137,7 @@ ordnance is shot off.]
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[35]:</div>
+<div class="prompt output_prompt">Out[33]:</div>
 
 
 
@@ -13008,7 +13163,7 @@ ordnance is shot off.]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">lastword</span><span class="o">=</span><span class="n">hamlettokens</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
@@ -13040,7 +13195,7 @@ ordnance is shot off.]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">lastword</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="c1">#cant change a part of a string</span>
@@ -13063,7 +13218,7 @@ ordnance is shot off.]
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-37-7d666f1ef024&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">&lt;ipython-input-35-a2b5f6b81b5d&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
 <span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>lastword<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">-</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#34;k&#34;</span><span class="ansi-red-fg">#cant change a part of a string</span>
 
 <span class="ansi-red-fg">TypeError</span>: &#39;str&#39; object does not support item assignment</pre>
@@ -13076,7 +13231,7 @@ ordnance is shot off.]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">lastword</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
@@ -13092,13 +13247,46 @@ ordnance is shot off.]
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[38]:</div>
+<div class="prompt output_prompt">Out[36]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
 <pre>&#39;.&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">lastword</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[37]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;]&#39;</pre>
 </div>
 
 </div>
@@ -13118,7 +13306,7 @@ ordnance is shot off.]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">wierdstring</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">hamlettokens</span><span class="p">)</span>
@@ -13135,7 +13323,7 @@ ordnance is shot off.]
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[40]:</div>
+<div class="prompt output_prompt">Out[38]:</div>
 
 
 
@@ -13161,7 +13349,7 @@ ordnance is shot off.]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -13181,7 +13369,7 @@ ordnance is shot off.]
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[41]:</div>
+<div class="prompt output_prompt">Out[39]:</div>
 
 
 
@@ -13198,7 +13386,7 @@ ordnance is shot off.]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">square</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">cube</span><span class="p">)</span>
@@ -13218,7 +13406,7 @@ ordnance is shot off.]
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;function square at 0x609fa28&gt; &lt;type &#39;function&#39;&gt;
+<pre>&lt;function square at 0x31f7f50&gt; &lt;type &#39;function&#39;&gt;
 </pre>
 </div>
 </div>
@@ -13238,7 +13426,7 @@ ordnance is shot off.]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">sum_of_anything</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">f</span><span class="p">):</span>
@@ -13261,14 +13449,14 @@ ordnance is shot off.]
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>3 4 &lt;function square at 0x609fa28&gt;
+<pre>3 4 &lt;function square at 0x31f7f50&gt;
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[43]:</div>
+<div class="prompt output_prompt">Out[41]:</div>
 
 
 
@@ -13294,7 +13482,7 @@ ordnance is shot off.]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="o">*</span><span class="n">posargs</span><span class="p">,</span><span class="o">**</span><span class="n">dictargs</span><span class="p">):</span>
@@ -13342,7 +13530,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#your code here</span>
@@ -13388,7 +13576,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
@@ -13405,7 +13593,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[54]:</div>
+<div class="prompt output_prompt">Out[44]:</div>
 
 
 
@@ -13422,7 +13610,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="mi">6</span> <span class="ow">in</span> <span class="n">a</span>
@@ -13438,7 +13626,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[55]:</div>
+<div class="prompt output_prompt">Out[45]:</div>
 
 
 
@@ -13464,7 +13652,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">do_it</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -13502,7 +13690,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">do_it</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">do_it</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -13530,7 +13718,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[57]:</div>
+<div class="prompt output_prompt">Out[47]:</div>
 
 
 
@@ -13556,7 +13744,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
@@ -13605,7 +13793,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">i</span><span class="o">=</span><span class="mi">0</span>
@@ -13656,7 +13844,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">try</span><span class="p">:</span>
@@ -13680,7 +13868,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(&lt;type &#39;exceptions.TypeError&#39;&gt;, TypeError(&#39;f() takes at least 2 arguments (1 given)&#39;,), &lt;traceback object at 0x60b23b0&gt;)
+<pre>(&lt;type &#39;exceptions.TypeError&#39;&gt;, TypeError(&#39;f() takes at least 2 arguments (1 given)&#39;,), &lt;traceback object at 0x6671050&gt;)
 </pre>
 </div>
 </div>
@@ -13700,7 +13888,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">hamletlctokens</span><span class="o">=</span><span class="p">[</span><span class="n">word</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">hamlettokens</span><span class="p">]</span>
@@ -13717,7 +13905,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[61]:</div>
+<div class="prompt output_prompt">Out[53]:</div>
 
 
 
@@ -13743,7 +13931,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">hamletlctokens</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
@@ -13759,7 +13947,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[62]:</div>
+<div class="prompt output_prompt">Out[54]:</div>
 
 
 
@@ -13785,7 +13973,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">uniquelctokens</span><span class="o">=</span><span class="nb">set</span><span class="p">(</span><span class="n">hamletlctokens</span><span class="p">)</span>
@@ -13798,7 +13986,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">tokendict</span><span class="o">=</span><span class="p">{}</span>
@@ -13822,7 +14010,40 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">tokendict</span><span class="o">.</span><span class="n">iteritems</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[57]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;dictionary-itemiterator at 0x6721208&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">L</span><span class="o">=</span><span class="nb">sorted</span><span class="p">(</span><span class="n">tokendict</span><span class="o">.</span><span class="n">iteritems</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span> <span class="k">lambda</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="p">):</span><span class="n">v</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)[:</span><span class="mi">100</span><span class="p">]</span>
@@ -13839,7 +14060,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[67]:</div>
+<div class="prompt output_prompt">Out[58]:</div>
 
 
 
@@ -13964,7 +14185,7 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">topfreq</span><span class="o">=</span><span class="n">L</span><span class="p">[:</span><span class="mi">20</span><span class="p">]</span>
@@ -14001,166 +14222,102 @@ got 1 3 (4,) {&#39;c&#39;: 2, &#39;d&#39;: 1}
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-fPCBxo0bp9raWuXk5CghIUF/+ctf1NDQIJvNpgULFuizzz7TE088oZiYGH3//fe67rrr9M477+jT
-Tz9Vfn5+oz/Ppva7Z599Vv/617+0Z88ede7cWQsWLAg81//0pz/plltuCXqeH3roIdXV1amgoEAL
-FiwI6v6N5X7xxRf6/PPP5Xa7tWfPHt12221BHTUe6MB5v+6667R48WK99tprWr16tZYsWaKoqCh1
-7dpVxcXFzf7lXVpaqrfeekv19fXatm2bbrrpJvXt21dFRUWKjIxUTEyMioqKtHbtWu3YsaPJ+Rkz
-ZoyWLFmi+Ph4nX/++Vq+fLn69eunAQMGqGfPnioqKtKaNWv0ySef6LTTTpPH49HUqVP13Xff6cQT
-T9Sjjz6qqKgj10FTz4sLL7xQ69at0/Lly/XCCy8oIiJCZ599tqZPn37U8bZk37jyyis1YcIEnXji
-iRo2bJhuvPHGo26nsLBQlZWVuvfee1VTUyOXy3XQ7+LLLrtMvXv3VnR0tB555JFm/ewkae3atXrr
-rbdUV1enSZMmadasWXrttdcUExOjhx9+WKmpqaqurtbu3bt133336d5772129oGMLOiJEydq69at
-GjJkiKqrqzV79mxt3LhRS5YsUWZmphYsWKDS0lJ16NBBd9xxh9avX69BgwY1mrlt2zZdeuml+sUv
-fqGamhpdf/316tatmzIyMnT33XeruLhY//jHP3ThhRdqw4YNKi0tVX19vS677LKQx+9yuTR48GDl
-5eWpurpaubm5KisrC3VatGrVKp100kl6+OGH5Xa7NWbMGI0YMUKnn356i8tZOniOqqurm/yF3pi6
-ujotXbpUr7zyipYtW6aSkhJt2LBBy5YtU2VlpX788UdVV1crMTGxReUshf/o0mazyWaz6auvvtLT
-Tz+tjh076uKLL9bOnTvVpUuXZudcc801WrFihYYNG6bnnntOGRkZcjqdmjt3buDnN3DgwGY9Fr/f
-r+joaC1dulTffPONxo8fr8svv1xPPPGEOnbsqHvvvVdr165Vt27dVF1drRdeeEEff/yxpkyZojfe
-eEPff/+9Jk2a1OjPs7H9bvjw4dq9e7eWLVsmm82mcePGadOmTYH7BFvO+x9rdna2Xn755aB+OTYn
-t6qqSj/88IOefPJJ1dbW6ssvvwwp69B5v+mmmwI/o5dfflk33nijRo4cqb///e9yuVxBHaW5XC4t
-XbpUlZWVuvnmmxUXF6f7779fZ5xxhsrKyjRnzhw9+uijevzxx5ucn5///Odas2aNunXrpl69emnd
-unWKiYnR4MGD9e233+qss87S0KFDdemll6p79+6qq6vT1KlT1aNHD+Xl5Wnz5s1KT08/YnZjz4sR
-I0YE5uP555/XzJkzdfbZZ2vFihXat2+fIiMjj5jZ0n1jx44dev7554/6R8V+M2fOVEFBgeLi4nTh
-hRce9ru4rq5Ov/3tb3XGGWc0mnMgv9+vxMREPfzww9q5c6eys7MPG6fNZtOECRP07LPPhlzOkqEF
-feBnp5x55pmSpC5dumjPnj2qrKxUbW1t4K8mt9utqqqqJjO7dOmiZ555Rq+//rrsdnvgmk6/fv0k
-Sd27d9eOHTv05Zdf6qyzzpIkdejQQeecc46C/SyX/et/8cUXGj16tCSpW7dustvtqq2tVWJiYlB5
-+33xxReBP0Ti4uLUp08fbdu2TWlpaSHlHerQOQr1OpvNZgvMq91uV2pqqiQpISFBXq9Xo0eP1ksv
-vaSvv/76sCe3SU499VTFxsZKkpKSklRfXx/U/QcMGKCioiLV1tZq/fr1Ou+88w76+aWmph723D3a
-qUybzRbYF0466aTAUeydd96p2NhYffnll/rZz34mSUpLS1NkZKTsdrt69eqlqKgoJSQkNDn+xvY7
-m82m6OhoFRQUKDY2VtXV1dq3b1/Q+8axcsopp2jEiBGaOnWqGhoalJeXF1LOofO+d+/eQFHcdddd
-Wrx4sRwOh/r06RPUH8kH7iMnn3yyPB6P6urqAkXRv3//oF5zMHLkSD3++OPq0aOHbrvtNjkcDvl8
-Pp111llHfA1Np06d1KNHD0k/Pbf37t171OzGnhcHmjNnjp566il9/fXXOvfccxt9brR030hOTm6y
-nA8c+5F+F+/cuVOSgv50S5vNpqysLEk/zYPdbj9orOHcJ4y8Br3/W6+kw48okpOT1b17dy1btkwO
-h0O5ubk699xzm8x8+umnde6552ru3Lm65JJLjrreaaedpo8++kg+n08ej0ebN28O+ght//j79Omj
-9957T9JP10J+/PFHnXjiiUFlHSg1NTWQ53K5tHXrViUnJ4ecd6jmzlFzNDZnV155pV577TX95z//
-0bBhw1q0HZPZbDaNHj1aRUVFGjx48GE/v88++0zJycnq0KFD4Nrg5s2bG83bz+l06rHHHtMf//hH
-FRUVqUOHDoFfDKGeUWhsv9uyZYvKyspUXFys6dOny+fzye/3KyIiosXXj8ORcSC/36/Kykq53W4t
-XrxYc+Yvn0PFAAADG0lEQVTM0ezZs0POO9p8rlq1SpMnT5bD4ZDf79cbb7zRotyuXbsGXsT17rvv
-BoqjOfOTlpamqqoqbdq0ScOGDZPb7da///3vg/Yvm82mffv2NfqYjqSx58WBSkpKNGvWLDkcDm3e
-vFkffPDBUddt6b5xtG9EPJoD86urq+V0OgO/i4PdX/x+f+CxVVdXq76+XieffLJqamrk9/v1ySef
-HLRuSxh5BN2lSxd5vV7V19cfNHk2m02JiYm64YYbNHbsWPl8PiUnJzfrNPSIESNUVFSkN954Q6ed
-dppiY2Pl9XoP++GcccYZuuiii3T11VerS5cu6ty5c8jjd7vdeuedd/TPf/5Te/fu1ezZs4N+Yh3o
-mmuu0YwZM5Sbm6u9e/dq0qRJ+vrrr8N2ivfQOYqLi5PX6w3pBTH7x3To2Gw2W+Av2MzMzBbNx5G2
-F07hyBwzZoyGDRuml156ScnJyYf9/BITE5WXl6dZs2ape/fu6tatW7PGEx8fr4yMDF177bVKTExU
-7969tX37diUnJx+2zxz672XLlumUU07RRRdddFB+Y/tdSkqKTjjhBI0dO1adO3fWmWeeqZqaGp17
-7rnyer2aN29eyK8B6N+/v2666SY5HI6Q7n+o/ePdsGGDXn31Vfl8Pk2ZMqVFeUeSnp4eODUdFxen
-ESNGhJxrs9lUVFSk2bNny+/3KyoqSvfff7+kn+Zn/Pjx+vOf/9xo3vnnn69vvvlGNptNAwYMUEVF
-hU444YTAdjIyMvTII48c8Y/6xp7rjT0vDnT66acrNzdXcXFxOvnkk496yny/luwbweybNptNN998
-s+6+++7A7+L77rtPkZGRIe3jNptNu3fv1q9//Wvt2bNHRUVF2rZtm8aPH6+ePXsedBCWmpqqO+64
-Qw899FDQ25H4LG4cJxMnTtTdd9+tXr16He+hWKqmpkZ33nmnnn766eM9FMAo7BtNM/IUN9quvXv3
-asyYMerTp0+bL+fXX39d48aN0+9+97vjPRTAKOwbzcMRNAAABuIIGgAAA1HQAAAYiIIGAMBAFDQA
-AAaioAEAMND/A8NudfT377dBAAAAAElFTkSuQmCC
+<img src="data:image/png;base64,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
 "
 >
 </div>
