@@ -11840,6 +11840,41 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="More-Markdown-Examples">More Markdown Examples<a class="anchor-link" href="#More-Markdown-Examples">&#182;</a></h2><p>abc
+def</p>
+<p>ghi
+jkl</p>
+<p><a href="#Pandas">This is a link takes you to Pandas</a></p>
+<p>$$\alpha + \frac{\beta}{\gamma} = \delta$$</p>
+<p>hello this is some math and one dollar sign puts the maths inline $\alpha + \frac{\beta}{\gamma} = \delta$ and I am crazy</p>
+<ul>
+<li>this is</li>
+<li>a unnumbered</li>
+<li>list</li>
+</ul>
+<ol>
+<li>this is</li>
+<li>a numbered list</li>
+<li>the number doesn't matter</li>
+</ol>
+<p>You use two asterix to make this <strong>bold</strong>, or use one asterix for <em>itelics</em></p>
+<p>Use a backtick <code>like this</code> to highlight something of importance.</p>
+<p>Or if you want something indented for quotes then use great than sign like this:</p>
+<blockquote><p>some cool quote</p>
+</blockquote>
+<p>Use three backticks to indicate code</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
+    <span class="k">print</span> <span class="s2">&quot;Hellow World&quot;</span>
+</pre></div>
+<p>[PK] This is probably how I indicate my review feedback so that the author can see and search for it easily</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Pandas">Pandas<a class="anchor-link" href="#Pandas">&#182;</a></h2>
 </div>
 </div>
@@ -11863,6 +11898,10 @@ div#notebook {
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;all.csv&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
                <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;rating&quot;</span><span class="p">,</span> <span class="s1">&#39;review_count&#39;</span><span class="p">,</span> <span class="s1">&#39;isbn&#39;</span><span class="p">,</span> <span class="s1">&#39;booktype&#39;</span><span class="p">,</span><span class="s1">&#39;author_url&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;genre_urls&#39;</span><span class="p">,</span> <span class="s1">&#39;dir&#39;</span><span class="p">,</span><span class="s1">&#39;rating_count&#39;</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">],</span>
 <span class="p">)</span>
+<span class="c1"># Can use a URI for the csv file read into Pandas</span>
+<span class="c1">#df=pd.read_csv(&quot;https://raw.githubusercontent.com/cs109/2015lab1/master/all.csv&quot;, header=None,</span>
+<span class="c1">#               names=[&quot;rating&quot;, &#39;review_count&#39;, &#39;isbn&#39;, &#39;booktype&#39;,&#39;author_url&#39;, &#39;year&#39;, &#39;genre_urls&#39;, &#39;dir&#39;,&#39;rating_count&#39;, &#39;name&#39;],</span>
+<span class="c1">#)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
@@ -11882,6 +11921,19 @@ div#notebook {
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -11906,7 +11958,7 @@ div#notebook {
       <td>0439023483</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/153394.S...</td>
-      <td>2008</td>
+      <td>2008.0</td>
       <td>/genres/young-adult|/genres/science-fiction|/g...</td>
       <td>dir01/2767052-the-hunger-games.html</td>
       <td>2958974</td>
@@ -11919,7 +11971,7 @@ div#notebook {
       <td>0439358078</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/1077326....</td>
-      <td>2003</td>
+      <td>2003.0</td>
       <td>/genres/fantasy|/genres/young-adult|/genres/fi...</td>
       <td>dir01/2.Harry_Potter_and_the_Order_of_the_Phoe...</td>
       <td>1284478</td>
@@ -11932,7 +11984,7 @@ div#notebook {
       <td>0316015849</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/941441.S...</td>
-      <td>2005</td>
+      <td>2005.0</td>
       <td>/genres/young-adult|/genres/fantasy|/genres/ro...</td>
       <td>dir01/41865.Twilight.html</td>
       <td>2579564</td>
@@ -11945,7 +11997,7 @@ div#notebook {
       <td>0061120081</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/1825.Har...</td>
-      <td>1960</td>
+      <td>1960.0</td>
       <td>/genres/classics|/genres/fiction|/genres/histo...</td>
       <td>dir01/2657.To_Kill_a_Mockingbird.html</td>
       <td>2078123</td>
@@ -11958,7 +12010,7 @@ div#notebook {
       <td>0679783261</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/1265.Jan...</td>
-      <td>1813</td>
+      <td>1813.0</td>
       <td>/genres/classics|/genres/fiction|/genres/roman...</td>
       <td>dir01/1885.Pride_and_Prejudice.html</td>
       <td>1388992</td>
@@ -11980,7 +12032,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Notice we have a table! A spreadsheet! And it indexed the rows. Pandas (borrowing from R) calls it a DataFrame. Lets see the types of the columns...</p>
-<p><code>df</code>, in python parlance, is an <strong>instance</strong> of the <code>pd.DataFrame</code> class, created by calling the <code>pd.read_csv</code> function, which cllas the DataFrame constructor inside of it. If you dont understand this sentence, dont worry, it will become clearer later. What you need to take away is that <code>df</code> is a dataframe object, and it has <strong>methods</strong>, or functions belonging to it, which allow it to do things. For example <code>df.head()</code> is a method that shows the first 5 rows of the dataframe.</p>
+<p><code>df</code>, in python parlance, is an <strong>instance</strong> of the <code>pd.DataFrame</code> class, created by calling the <code>pd.read_csv</code> function, which calls the DataFrame constructor inside of it. If you dont understand this sentence, dont worry, it will become clearer later. What you need to take away is that <code>df</code> is a dataframe object, and it has <strong>methods</strong>, or functions belonging to it, which allow it to do things. For example <code>df.head()</code> is a method that shows the first 5 rows of the dataframe.</p>
 <p><img src="pandastruct.png" alt=""></p>
 <h3 id="The-basics">The basics<a class="anchor-link" href="#The-basics">&#182;</a></h3>
 </div>
@@ -11988,7 +12040,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
@@ -12004,7 +12056,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[3]:</div>
+<div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -12040,7 +12092,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
@@ -12056,7 +12108,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[4]:</div>
+<div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -12082,7 +12134,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
@@ -12098,7 +12150,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[5]:</div>
+<div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -12124,7 +12176,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span>
@@ -12140,7 +12192,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[6]:</div>
+<div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -12166,7 +12218,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">rating</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -12182,13 +12234,46 @@ dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[7]:</div>
+<div class="prompt output_prompt">Out[15]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
 <pre>(pandas.core.series.Series, pandas.core.frame.DataFrame)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">review_count</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[16]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>pandas.core.series.Series</pre>
 </div>
 
 </div>
@@ -12208,7 +12293,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">rating</span> <span class="o">&lt;</span> <span class="mi">3</span>
@@ -12224,7 +12309,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[8]:</div>
+<div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -12291,7 +12376,7 @@ dtype: object</pre>
 5997    False
 5998    False
 5999    False
-Name: rating, dtype: bool</pre>
+Name: rating, Length: 6000, dtype: bool</pre>
 </div>
 
 </div>
@@ -12311,7 +12396,7 @@ Name: rating, dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">rating</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span>
@@ -12327,7 +12412,7 @@ Name: rating, dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[9]:</div>
+<div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -12347,13 +12432,14 @@ Name: rating, dtype: bool</pre>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Why did that work?</p>
+<p>A: Because df.rating &lt; 3 gives us a series of Trues and Falses. True is a boolean but is also equal to numeric '1' therefore sum of the '1' is similar to counting the number of True elements.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="mi">1</span><span class="o">*</span><span class="bp">True</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="bp">False</span>
@@ -12393,7 +12479,7 @@ Name: rating, dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">rating</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -12409,7 +12495,7 @@ Name: rating, dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[11]:</div>
+<div class="prompt output_prompt">Out[20]:</div>
 
 
 
@@ -12435,7 +12521,7 @@ Name: rating, dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">rating</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
@@ -12451,7 +12537,7 @@ Name: rating, dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[12]:</div>
+<div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -12477,7 +12563,7 @@ Name: rating, dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">rating</span> <span class="o">&lt;</span> <span class="mf">3.0</span><span class="p">)</span>
@@ -12493,7 +12579,7 @@ Name: rating, dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[15]:</div>
+<div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -12519,7 +12605,7 @@ Name: rating, dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">rating</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -12535,7 +12621,7 @@ Name: rating, dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[16]:</div>
+<div class="prompt output_prompt">Out[30]:</div>
 
 
 
@@ -12561,7 +12647,7 @@ Name: rating, dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;rating &gt; 4.5&quot;</span><span class="p">)</span>
@@ -12577,12 +12663,25 @@ Name: rating, dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[22]:</div>
+<div class="prompt output_prompt">Out[38]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -12607,7 +12706,7 @@ Name: rating, dtype: bool</pre>
       <td>0345538374</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/656983.J...</td>
-      <td>1973</td>
+      <td>1973.0</td>
       <td>/genres/fantasy|/genres/classics|/genres/scien...</td>
       <td>dir01/30.J_R_R_Tolkien_4_Book_Boxed_Set.html</td>
       <td>68495</td>
@@ -12620,7 +12719,7 @@ Name: rating, dtype: bool</pre>
       <td>075640407X</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/108424.P...</td>
-      <td>2007</td>
+      <td>2007.0</td>
       <td>/genres/fantasy|/genres/fiction</td>
       <td>dir02/186074.The_Name_of_the_Wind.html</td>
       <td>210018</td>
@@ -12633,7 +12732,7 @@ Name: rating, dtype: bool</pre>
       <td>055357342X</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/346732.G...</td>
-      <td>2000</td>
+      <td>2000.0</td>
       <td>/genres/fantasy|/genres/fiction|/genres/fantas...</td>
       <td>dir03/62291.A_Storm_of_Swords.html</td>
       <td>327992</td>
@@ -12646,7 +12745,7 @@ Name: rating, dtype: bool</pre>
       <td>0545265355</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/153394.S...</td>
-      <td>2010</td>
+      <td>2010.0</td>
       <td>/genres/young-adult|/genres/fiction|/genres/fa...</td>
       <td>dir03/7938275-the-hunger-games-trilogy-boxset....</td>
       <td>102330</td>
@@ -12659,7 +12758,7 @@ Name: rating, dtype: bool</pre>
       <td>0740748475</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/13778.Bi...</td>
-      <td>2005</td>
+      <td>2005.0</td>
       <td>/genres/sequential-art|/genres/comics|/genres/...</td>
       <td>dir03/24812.The_Complete_Calvin_and_Hobbes.html</td>
       <td>22674</td>
@@ -12672,7 +12771,7 @@ Name: rating, dtype: bool</pre>
       <td>1406321346</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/150038.C...</td>
-      <td>2013</td>
+      <td>2013.0</td>
       <td>/genres/fantasy|/genres/young-adult|/genres/fa...</td>
       <td>dir03/18335634-clockwork-princess.html</td>
       <td>130161</td>
@@ -12685,7 +12784,7 @@ Name: rating, dtype: bool</pre>
       <td>0140259449</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/1265.Jan...</td>
-      <td>1933</td>
+      <td>1933.0</td>
       <td>/genres/classics|/genres/fiction|/genres/roman...</td>
       <td>dir04/14905.The_Complete_Novels.html</td>
       <td>17539</td>
@@ -12698,7 +12797,7 @@ Name: rating, dtype: bool</pre>
       <td>0756404738</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/108424.P...</td>
-      <td>2011</td>
+      <td>2011.0</td>
       <td>/genres/fantasy|/genres/fantasy|/genres/epic-f...</td>
       <td>dir04/1215032.The_Wise_Man_s_Fear.html</td>
       <td>142499</td>
@@ -12711,7 +12810,7 @@ Name: rating, dtype: bool</pre>
       <td>1423140605</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/15872.Ri...</td>
-      <td>2012</td>
+      <td>2012.0</td>
       <td>/genres/fantasy|/genres/young-adult|/genres/fa...</td>
       <td>dir05/12127750-the-mark-of-athena.html</td>
       <td>128412</td>
@@ -12724,7 +12823,7 @@ Name: rating, dtype: bool</pre>
       <td>1416997857</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/150038.C...</td>
-      <td>2009</td>
+      <td>2009.0</td>
       <td>/genres/fantasy|/genres/young-adult|/genres/fa...</td>
       <td>dir05/6485421-the-mortal-instruments-boxed-set...</td>
       <td>39720</td>
@@ -12737,7 +12836,7 @@ Name: rating, dtype: bool</pre>
       <td>0312362153</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/4430.She...</td>
-      <td>2008</td>
+      <td>2008.0</td>
       <td>/genres/romance|/genres/paranormal-romance|/ge...</td>
       <td>dir05/2299110.Acheron.html</td>
       <td>35028</td>
@@ -12750,7 +12849,7 @@ Name: rating, dtype: bool</pre>
       <td>0385341679</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/48206.Ka...</td>
-      <td>2011</td>
+      <td>2011.0</td>
       <td>/genres/fantasy|/genres/urban-fantasy|/genres/...</td>
       <td>dir06/7304203-shadowfever.html</td>
       <td>52812</td>
@@ -12763,7 +12862,7 @@ Name: rating, dtype: bool</pre>
       <td>0765326353</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/38550.Br...</td>
-      <td>2010</td>
+      <td>2010.0</td>
       <td>/genres/science-fiction-fantasy|/genres/fantas...</td>
       <td>dir06/7235533-the-way-of-kings.html</td>
       <td>76551</td>
@@ -12776,7 +12875,7 @@ Name: rating, dtype: bool</pre>
       <td>1423146727</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/15872.Ri...</td>
-      <td>2013</td>
+      <td>2013.0</td>
       <td>/genres/fantasy|/genres/young-adult|/genres/fa...</td>
       <td>dir07/12127810-the-house-of-hades.html</td>
       <td>72082</td>
@@ -12789,7 +12888,7 @@ Name: rating, dtype: bool</pre>
       <td>1423113497</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/15872.Ri...</td>
-      <td>2008</td>
+      <td>2008.0</td>
       <td>/genres/fantasy|/genres/young-adult|/genres/fa...</td>
       <td>dir09/3165162-percy-jackson-and-the-olympians-...</td>
       <td>22937</td>
@@ -12802,7 +12901,7 @@ Name: rating, dtype: bool</pre>
       <td>0140286802</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/500.Jorg...</td>
-      <td>1998</td>
+      <td>1998.0</td>
       <td>/genres/short-stories|/genres/literature|/genr...</td>
       <td>dir09/17961.Collected_Fictions.html</td>
       <td>12596</td>
@@ -12815,7 +12914,7 @@ Name: rating, dtype: bool</pre>
       <td>1491732954</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/8189303....</td>
-      <td>2014</td>
+      <td>2014.0</td>
       <td>/genres/fiction</td>
       <td>dir10/22242097-honor-and-polygamy.html</td>
       <td>97</td>
@@ -12828,7 +12927,7 @@ Name: rating, dtype: bool</pre>
       <td>1595142711</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/137902.R...</td>
-      <td>2009</td>
+      <td>2009.0</td>
       <td>/genres/paranormal|/genres/vampires|/genres/yo...</td>
       <td>dir10/6339989-vampire-academy-collection.html</td>
       <td>21743</td>
@@ -12841,7 +12940,7 @@ Name: rating, dtype: bool</pre>
       <td>1481426303</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/150038.C...</td>
-      <td>2014</td>
+      <td>2014.0</td>
       <td>/genres/fantasy|/genres/young-adult|/genres/fa...</td>
       <td>dir10/8755785-city-of-heavenly-fire.html</td>
       <td>69924</td>
@@ -12854,7 +12953,7 @@ Name: rating, dtype: bool</pre>
       <td>1477276068</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/6621980....</td>
-      <td>2012</td>
+      <td>2012.0</td>
       <td>NaN</td>
       <td>dir10/16243767-crossing-the-seas.html</td>
       <td>90</td>
@@ -12867,7 +12966,7 @@ Name: rating, dtype: bool</pre>
       <td>0545010225</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/1077326....</td>
-      <td>2007</td>
+      <td>2007.0</td>
       <td>/genres/fantasy|/genres/young-adult|/genres/fa...</td>
       <td>dir10/136251.Harry_Potter_and_the_Deathly_Hall...</td>
       <td>1245866</td>
@@ -12880,7 +12979,7 @@ Name: rating, dtype: bool</pre>
       <td>0007119550</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/346732.G...</td>
-      <td>2000</td>
+      <td>2000.0</td>
       <td>/genres/fiction|/genres/fantasy|/genres/epic-f...</td>
       <td>dir11/147915.A_Storm_of_Swords.html</td>
       <td>41161</td>
@@ -12893,7 +12992,7 @@ Name: rating, dtype: bool</pre>
       <td>NaN</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/7488658....</td>
-      <td>2013</td>
+      <td>2013.0</td>
       <td>/genres/romance</td>
       <td>dir12/19181419-a-bird-without-wings.html</td>
       <td>56</td>
@@ -12906,7 +13005,7 @@ Name: rating, dtype: bool</pre>
       <td>0141183047</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/7816.Fer...</td>
-      <td>1982</td>
+      <td>1982.0</td>
       <td>/genres/poetry|/genres/fiction|/genres/philoso...</td>
       <td>dir12/45974.The_Book_of_Disquiet.html</td>
       <td>7463</td>
@@ -12919,7 +13018,7 @@ Name: rating, dtype: bool</pre>
       <td>1491877928</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/7271860....</td>
-      <td>2013</td>
+      <td>2013.0</td>
       <td>/genres/war|/genres/historical-fiction|/genres...</td>
       <td>dir12/18501652-the-guardian-of-secrets-and-her...</td>
       <td>167</td>
@@ -12932,7 +13031,7 @@ Name: rating, dtype: bool</pre>
       <td>1619630621</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/3433047....</td>
-      <td>2013</td>
+      <td>2013.0</td>
       <td>/genres/fantasy|/genres/young-adult|/genres/ro...</td>
       <td>dir12/17167166-crown-of-midnight.html</td>
       <td>34142</td>
@@ -12945,7 +13044,7 @@ Name: rating, dtype: bool</pre>
       <td>0310902711</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/5158478....</td>
-      <td>1972</td>
+      <td>1972.0</td>
       <td>/genres/religion|/genres/christian|/genres/non...</td>
       <td>dir13/280111.Holy_Bible.html</td>
       <td>25584</td>
@@ -12958,7 +13057,7 @@ Name: rating, dtype: bool</pre>
       <td>0842377506</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/6492.Fra...</td>
-      <td>1993</td>
+      <td>1993.0</td>
       <td>/genres/christian-fiction|/genres/historical-f...</td>
       <td>dir13/95617.A_Voice_in_the_Wind.html</td>
       <td>37923</td>
@@ -12971,7 +13070,7 @@ Name: rating, dtype: bool</pre>
       <td>1557091528</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/63859.Ja...</td>
-      <td>1787</td>
+      <td>1787.0</td>
       <td>/genres/history|/genres/non-fiction|/genres/po...</td>
       <td>dir13/89959.The_Constitution_of_the_United_Sta...</td>
       <td>12894</td>
@@ -12984,7 +13083,7 @@ Name: rating, dtype: bool</pre>
       <td>1499227299</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/7414345....</td>
-      <td>2014</td>
+      <td>2014.0</td>
       <td>/genres/paranormal|/genres/vampires|/genres/pa...</td>
       <td>dir14/22090082-vampire-princess-rising.html</td>
       <td>128</td>
@@ -13010,7 +13109,7 @@ Name: rating, dtype: bool</pre>
       <td>1477504540</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/5989528....</td>
-      <td>2013</td>
+      <td>2013.0</td>
       <td>NaN</td>
       <td>dir56/17695243-call-of-the-lost-ages.html</td>
       <td>7</td>
@@ -13023,7 +13122,7 @@ Name: rating, dtype: bool</pre>
       <td>0882408704</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/947.Will...</td>
-      <td>1899</td>
+      <td>1899.0</td>
       <td>/genres/classics|/genres/fiction|/genres/poetr...</td>
       <td>dir56/17134346-the-complete-works-of-william-s...</td>
       <td>217</td>
@@ -13036,7 +13135,7 @@ Name: rating, dtype: bool</pre>
       <td>NaN</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/32401.Al...</td>
-      <td>2006</td>
+      <td>2006.0</td>
       <td>/genres/fantasy|/genres/young-adult</td>
       <td>dir56/13488552-the-books-of-pellinor.html</td>
       <td>394</td>
@@ -13049,7 +13148,7 @@ Name: rating, dtype: bool</pre>
       <td>NaN</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/7153266....</td>
-      <td>2014</td>
+      <td>2014.0</td>
       <td>/genres/childrens</td>
       <td>dir56/20445451-children-s-book.html</td>
       <td>57</td>
@@ -13062,7 +13161,7 @@ Name: rating, dtype: bool</pre>
       <td>NaN</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/7738947....</td>
-      <td>2014</td>
+      <td>2014.0</td>
       <td>/genres/romance|/genres/new-adult</td>
       <td>dir56/21902777-untainted.html</td>
       <td>14</td>
@@ -13075,7 +13174,7 @@ Name: rating, dtype: bool</pre>
       <td>1481959824</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/5100743....</td>
-      <td>2013</td>
+      <td>2013.0</td>
       <td>NaN</td>
       <td>dir56/17606460-why-not-world.html</td>
       <td>8</td>
@@ -13088,7 +13187,7 @@ Name: rating, dtype: bool</pre>
       <td>NaN</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/4942228....</td>
-      <td>2011</td>
+      <td>2011.0</td>
       <td>/genres/romance|/genres/m-m-romance|/genres/sc...</td>
       <td>dir56/11737700-fade.html</td>
       <td>996</td>
@@ -13101,7 +13200,7 @@ Name: rating, dtype: bool</pre>
       <td>1500118680</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/7738947....</td>
-      <td>2014</td>
+      <td>2014.0</td>
       <td>/genres/romance|/genres/new-adult</td>
       <td>dir56/22023804-logan-s-story.html</td>
       <td>45</td>
@@ -13114,7 +13213,7 @@ Name: rating, dtype: bool</pre>
       <td>0842384898</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/5158478....</td>
-      <td>1902</td>
+      <td>1902.0</td>
       <td>/genres/christian|/genres/religion|/genres/non...</td>
       <td>dir57/930470.Holy_Bible.html</td>
       <td>2666</td>
@@ -13127,7 +13226,7 @@ Name: rating, dtype: bool</pre>
       <td>0007444397</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/4659154....</td>
-      <td>2011</td>
+      <td>2011.0</td>
       <td>/genres/non-fiction|/genres/biography</td>
       <td>dir57/11792612-dare-to-dream.html</td>
       <td>5572</td>
@@ -13140,7 +13239,7 @@ Name: rating, dtype: bool</pre>
       <td>0991190920</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/7092218....</td>
-      <td>2014</td>
+      <td>2014.0</td>
       <td>/genres/fantasy|/genres/paranormal|/genres/fai...</td>
       <td>dir57/18188649-escaping-destiny.html</td>
       <td>3795</td>
@@ -13153,7 +13252,7 @@ Name: rating, dtype: bool</pre>
       <td>0778315703</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/4480131....</td>
-      <td>2013</td>
+      <td>2013.0</td>
       <td>/genres/erotica|/genres/bdsm|/genres/adult-fic...</td>
       <td>dir57/17251444-the-mistress.html</td>
       <td>4869</td>
@@ -13166,7 +13265,7 @@ Name: rating, dtype: bool</pre>
       <td>1417642165</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/13778.Bi...</td>
-      <td>1992</td>
+      <td>1992.0</td>
       <td>/genres/sequential-art|/genres/comics|/genres/...</td>
       <td>dir57/70487.Calvin_and_Hobbes.html</td>
       <td>9224</td>
@@ -13179,7 +13278,7 @@ Name: rating, dtype: bool</pre>
       <td>1469908530</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/4695431....</td>
-      <td>2012</td>
+      <td>2012.0</td>
       <td>/genres/fantasy</td>
       <td>dir57/15734769-myrtle-mae-and-the-mirror-in-th...</td>
       <td>10</td>
@@ -13192,7 +13291,7 @@ Name: rating, dtype: bool</pre>
       <td>NaN</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/7738947....</td>
-      <td>2014</td>
+      <td>2014.0</td>
       <td>/genres/romance|/genres/new-adult|/genres/myst...</td>
       <td>dir57/20975446-tainted-pictures.html</td>
       <td>103</td>
@@ -13218,7 +13317,7 @@ Name: rating, dtype: bool</pre>
       <td>NaN</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/5989528....</td>
-      <td>2012</td>
+      <td>2012.0</td>
       <td>NaN</td>
       <td>dir57/14288412-abstraction-in-theory---laws-of...</td>
       <td>6</td>
@@ -13231,7 +13330,7 @@ Name: rating, dtype: bool</pre>
       <td>0810117134</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/205563.M...</td>
-      <td>1970</td>
+      <td>1970.0</td>
       <td>/genres/classics|/genres/fiction|/genres/histo...</td>
       <td>dir58/1679497.The_Fortress.html</td>
       <td>1335</td>
@@ -13244,7 +13343,7 @@ Name: rating, dtype: bool</pre>
       <td>NaN</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/5838022....</td>
-      <td>2012</td>
+      <td>2012.0</td>
       <td>NaN</td>
       <td>dir58/13741511-american-amaranth.html</td>
       <td>14</td>
@@ -13257,7 +13356,7 @@ Name: rating, dtype: bool</pre>
       <td>1613725132</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/1122775....</td>
-      <td>2012</td>
+      <td>2012.0</td>
       <td>/genres/romance|/genres/m-m-romance|/genres/ro...</td>
       <td>dir58/13246997-armed-dangerous.html</td>
       <td>5268</td>
@@ -13270,7 +13369,7 @@ Name: rating, dtype: bool</pre>
       <td>1594170347</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/5158478....</td>
-      <td>1952</td>
+      <td>1952.0</td>
       <td>/genres/religion|/genres/reference|/genres/rel...</td>
       <td>dir58/147635.Holy_Bible.html</td>
       <td>1750</td>
@@ -13283,7 +13382,7 @@ Name: rating, dtype: bool</pre>
       <td>NaN</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/7058502....</td>
-      <td>2014</td>
+      <td>2014.0</td>
       <td>NaN</td>
       <td>dir58/22312293-the-keeper.html</td>
       <td>29</td>
@@ -13296,7 +13395,7 @@ Name: rating, dtype: bool</pre>
       <td>1937551865</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/1122775....</td>
-      <td>2013</td>
+      <td>2013.0</td>
       <td>/genres/romance|/genres/m-m-romance|/genres/ro...</td>
       <td>dir58/16159276-touch-geaux.html</td>
       <td>4212</td>
@@ -13309,7 +13408,7 @@ Name: rating, dtype: bool</pre>
       <td>NaN</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/2112402....</td>
-      <td>2013</td>
+      <td>2013.0</td>
       <td>/genres/non-fiction|/genres/self-help|/genres/...</td>
       <td>dir58/18479831-staying-strong.html</td>
       <td>2343</td>
@@ -13322,7 +13421,7 @@ Name: rating, dtype: bool</pre>
       <td>NaN</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/4808225....</td>
-      <td>2010</td>
+      <td>2010.0</td>
       <td>NaN</td>
       <td>dir58/11187937-un-spoken.html</td>
       <td>19</td>
@@ -13335,7 +13434,7 @@ Name: rating, dtype: bool</pre>
       <td>0679777458</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/8361.Dor...</td>
-      <td>1966</td>
+      <td>1966.0</td>
       <td>/genres/historical-fiction|/genres/fiction|/ge...</td>
       <td>dir59/351211.The_Disorderly_Knights.html</td>
       <td>2177</td>
@@ -13348,7 +13447,7 @@ Name: rating, dtype: bool</pre>
       <td>144247372X</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/2876763....</td>
-      <td>2012</td>
+      <td>2012.0</td>
       <td>/genres/fantasy|/genres/paranormal|/genres/ang...</td>
       <td>dir59/14367071-the-complete-hush-hush-saga.html</td>
       <td>2869</td>
@@ -13361,7 +13460,7 @@ Name: rating, dtype: bool</pre>
       <td>2851944371</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/318835.O...</td>
-      <td>1972</td>
+      <td>1972.0</td>
       <td>/genres/poetry|/genres/fiction|/genres/nobel-p...</td>
       <td>dir59/2014000.Le_Monogramme.html</td>
       <td>565</td>
@@ -13374,7 +13473,7 @@ Name: rating, dtype: bool</pre>
       <td>NaN</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/4942228....</td>
-      <td>2010</td>
+      <td>2010.0</td>
       <td>/genres/romance|/genres/m-m-romance|/genres/sc...</td>
       <td>dir59/10506860-the-interludes.html</td>
       <td>1031</td>
@@ -13387,7 +13486,7 @@ Name: rating, dtype: bool</pre>
       <td>178048044X</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/20248.J_...</td>
-      <td>2010</td>
+      <td>2010.0</td>
       <td>/genres/romance|/genres/paranormal|/genres/vam...</td>
       <td>dir60/10780042-j-r-ward-collection.html</td>
       <td>1788</td>
@@ -13416,7 +13515,7 @@ Name: rating, dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">year</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span>
@@ -13432,12 +13531,25 @@ Name: rating, dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[37]:</div>
+<div class="prompt output_prompt">Out[40]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -13452,7 +13564,6 @@ Name: rating, dtype: bool</pre>
       <th>dir</th>
       <th>rating_count</th>
       <th>name</th>
-      <th>author</th>
     </tr>
   </thead>
   <tbody>
@@ -13461,308 +13572,286 @@ Name: rating, dtype: bool</pre>
       <td>3.68</td>
       <td>5785</td>
       <td>0143039954</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/903.Homer</td>
-      <td>-800</td>
+      <td>-800.0</td>
       <td>/genres/classics|/genres/fiction|/genres/poetr...</td>
       <td>dir01/1381.The_Odyssey.html</td>
       <td>560248</td>
       <td>The Odyssey</td>
-      <td>Homer</td>
     </tr>
     <tr>
       <th>246</th>
       <td>4.01</td>
       <td>365</td>
       <td>0147712556</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/903.Homer</td>
-      <td>-800</td>
+      <td>-800.0</td>
       <td>/genres/classics|/genres/fantasy|/genres/mytho...</td>
       <td>dir03/1375.The_Iliad_The_Odyssey.html</td>
       <td>35123</td>
       <td>The Iliad/The Odyssey</td>
-      <td>Homer</td>
     </tr>
     <tr>
       <th>455</th>
       <td>3.85</td>
       <td>1499</td>
       <td>0140449140</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/879.Plato</td>
-      <td>-380</td>
+      <td>-380.0</td>
       <td>/genres/philosophy|/genres/classics|/genres/no...</td>
       <td>dir05/30289.The_Republic.html</td>
       <td>82022</td>
       <td>The Republic</td>
-      <td>Plato</td>
     </tr>
     <tr>
       <th>596</th>
       <td>3.77</td>
       <td>1240</td>
       <td>0679729526</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/919.Virgil</td>
-      <td>-29</td>
+      <td>-29.0</td>
       <td>/genres/classics|/genres/poetry|/genres/fictio...</td>
       <td>dir06/12914.The_Aeneid.html</td>
       <td>60308</td>
       <td>The Aeneid</td>
-      <td>Virgil</td>
     </tr>
     <tr>
       <th>629</th>
       <td>3.64</td>
       <td>1231</td>
       <td>1580495931</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/1002.Sop...</td>
-      <td>-429</td>
+      <td>-429.0</td>
       <td>/genres/classics|/genres/plays|/genres/drama|/...</td>
       <td>dir07/1554.Oedipus_Rex.html</td>
       <td>93192</td>
       <td>Oedipus Rex</td>
-      <td>Sophocles</td>
     </tr>
     <tr>
       <th>674</th>
       <td>3.92</td>
       <td>3559</td>
       <td>1590302257</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/1771.Sun...</td>
-      <td>-512</td>
+      <td>-512.0</td>
       <td>/genres/non-fiction|/genres/politics|/genres/c...</td>
       <td>dir07/10534.The_Art_of_War.html</td>
       <td>114619</td>
       <td>The Art of War</td>
-      <td>Sun_Tzu</td>
     </tr>
     <tr>
       <th>746</th>
       <td>4.06</td>
       <td>1087</td>
       <td>0140449183</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/5158478....</td>
-      <td>-500</td>
+      <td>-500.0</td>
       <td>/genres/classics|/genres/spirituality|/genres/...</td>
       <td>dir08/99944.The_Bhagavad_Gita.html</td>
       <td>31634</td>
       <td>The Bhagavad Gita</td>
-      <td>Anonymous</td>
     </tr>
     <tr>
       <th>777</th>
       <td>3.52</td>
       <td>1038</td>
       <td>1580493882</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/1002.Sop...</td>
-      <td>-442</td>
+      <td>-442.0</td>
       <td>/genres/drama|/genres/fiction|/genres/classics...</td>
       <td>dir08/7728.Antigone.html</td>
       <td>49084</td>
       <td>Antigone</td>
-      <td>Sophocles</td>
     </tr>
     <tr>
       <th>1233</th>
       <td>3.94</td>
       <td>704</td>
       <td>015602764X</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/1002.Sop...</td>
-      <td>-400</td>
+      <td>-400.0</td>
       <td>/genres/classics|/genres/plays|/genres/drama|/...</td>
       <td>dir13/1540.The_Oedipus_Cycle.html</td>
       <td>36008</td>
       <td>The Oedipus Cycle</td>
-      <td>Sophocles</td>
     </tr>
     <tr>
       <th>1397</th>
       <td>4.03</td>
       <td>890</td>
       <td>0192840509</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/12452.Aesop</td>
-      <td>-560</td>
+      <td>-560.0</td>
       <td>/genres/classics|/genres/childrens|/genres/lit...</td>
       <td>dir14/21348.Aesop_s_Fables.html</td>
       <td>71259</td>
       <td>Aesop's Fables</td>
-      <td>Aesop</td>
     </tr>
     <tr>
       <th>1398</th>
       <td>3.60</td>
       <td>1644</td>
       <td>0141026286</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/5158478....</td>
-      <td>-1500</td>
+      <td>-1500.0</td>
       <td>/genres/religion|/genres/literature|/genres/an...</td>
       <td>dir14/19351.The_Epic_of_Gilgamesh.html</td>
       <td>42026</td>
       <td>The Epic of Gilgamesh</td>
-      <td>Anonymous</td>
     </tr>
     <tr>
       <th>1428</th>
       <td>3.80</td>
       <td>539</td>
       <td>0486275485</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/973.Euri...</td>
-      <td>-431</td>
+      <td>-431.0</td>
       <td>/genres/classics|/genres/plays|/genres/drama|/...</td>
       <td>dir15/752900.Medea.html</td>
       <td>29858</td>
       <td>Medea</td>
-      <td>Euripides</td>
     </tr>
     <tr>
       <th>1815</th>
       <td>3.96</td>
       <td>493</td>
       <td>0140443339</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/990.Aesc...</td>
-      <td>-458</td>
+      <td>-458.0</td>
       <td>/genres/classics|/genres/plays|/genres/drama|/...</td>
       <td>dir19/1519.The_Oresteia.html</td>
       <td>18729</td>
       <td>The Oresteia</td>
-      <td>Aeschylus</td>
     </tr>
     <tr>
       <th>1882</th>
       <td>4.02</td>
       <td>377</td>
       <td>0872205541</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/879.Plato</td>
-      <td>-400</td>
+      <td>-400.0</td>
       <td>/genres/philosophy|/genres/classics|/genres/no...</td>
       <td>dir19/22632.The_Trial_and_Death_of_Socrates.html</td>
       <td>18712</td>
       <td>The Trial and Death of Socrates</td>
-      <td>Plato</td>
     </tr>
     <tr>
       <th>2078</th>
       <td>3.84</td>
       <td>399</td>
       <td>0140440399</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/957.Thuc...</td>
-      <td>-411</td>
+      <td>-411.0</td>
       <td>/genres/history|/genres/classics|/genres/non-f...</td>
       <td>dir21/261243.The_History_of_the_Peloponnesian_...</td>
       <td>17212</td>
       <td>The History of the Peloponnesian War</td>
-      <td>Thucydides</td>
     </tr>
     <tr>
       <th>2527</th>
       <td>3.94</td>
       <td>506</td>
       <td>0140449086</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/901.Hero...</td>
-      <td>-440</td>
+      <td>-440.0</td>
       <td>/genres/history|/genres/classics|/genres/non-f...</td>
       <td>dir26/1362.The_Histories.html</td>
       <td>20570</td>
       <td>The Histories</td>
-      <td>Herodotus</td>
     </tr>
     <tr>
       <th>3133</th>
       <td>4.30</td>
       <td>131</td>
       <td>0872203492</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/879.Plato</td>
-      <td>-400</td>
+      <td>-400.0</td>
       <td>/genres/philosophy|/genres/classics|/genres/no...</td>
       <td>dir32/9462.Complete_Works.html</td>
       <td>7454</td>
       <td>Complete Works</td>
-      <td>Plato</td>
     </tr>
     <tr>
       <th>3274</th>
       <td>3.88</td>
       <td>411</td>
       <td>0140449493</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/2192.Ari...</td>
-      <td>-350</td>
+      <td>-350.0</td>
       <td>/genres/philosophy|/genres/classics|/genres/no...</td>
       <td>dir33/19068.The_Nicomachean_Ethics.html</td>
       <td>16534</td>
       <td>The Nicomachean Ethics</td>
-      <td>Aristotle</td>
     </tr>
     <tr>
       <th>3757</th>
       <td>3.82</td>
       <td>364</td>
       <td>0872206033</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/1011.Ari...</td>
-      <td>-411</td>
+      <td>-411.0</td>
       <td>/genres/plays|/genres/classics|/genres/drama|/...</td>
       <td>dir38/1591.Lysistrata.html</td>
       <td>18070</td>
       <td>Lysistrata</td>
-      <td>Aristophanes</td>
     </tr>
     <tr>
       <th>4402</th>
       <td>3.99</td>
       <td>516</td>
       <td>0140449272</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/879.Plato</td>
-      <td>-370</td>
+      <td>-370.0</td>
       <td>/genres/non-fiction|/genres/classics|/genres/p...</td>
       <td>dir45/81779.The_Symposium.html</td>
       <td>18457</td>
       <td>The Symposium</td>
-      <td>Plato</td>
     </tr>
     <tr>
       <th>4475</th>
       <td>4.11</td>
       <td>281</td>
       <td>0865163480</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/879.Plato</td>
-      <td>-390</td>
+      <td>-390.0</td>
       <td>/genres/philosophy|/genres/classics|/genres/no...</td>
       <td>dir45/73945.Apology.html</td>
       <td>11478</td>
       <td>Apology</td>
-      <td>Plato</td>
     </tr>
     <tr>
       <th>5367</th>
       <td>4.07</td>
       <td>133</td>
       <td>0872206335</td>
-      <td>book</td>
+      <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/879.Plato</td>
-      <td>-360</td>
+      <td>-360.0</td>
       <td>/genres/philosophy|/genres/classics|/genres/no...</td>
       <td>dir54/30292.Five_Dialogues.html</td>
       <td>9964</td>
       <td>Five Dialogues</td>
-      <td>Plato</td>
     </tr>
   </tbody>
 </table>
@@ -13786,7 +13875,7 @@ Name: rating, dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="o">.</span><span class="n">year</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">rating</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">)]</span><span class="c1">#there were none greater than 4.5!</span>
@@ -13802,12 +13891,25 @@ Name: rating, dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[19]:</div>
+<div class="prompt output_prompt">Out[42]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -13832,7 +13934,7 @@ Name: rating, dtype: bool</pre>
       <td>0147712556</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/903.Homer</td>
-      <td>-800</td>
+      <td>-800.0</td>
       <td>/genres/classics|/genres/fantasy|/genres/mytho...</td>
       <td>dir03/1375.The_Iliad_The_Odyssey.html</td>
       <td>35123</td>
@@ -13845,7 +13947,7 @@ Name: rating, dtype: bool</pre>
       <td>0140449183</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/5158478....</td>
-      <td>-500</td>
+      <td>-500.0</td>
       <td>/genres/classics|/genres/spirituality|/genres/...</td>
       <td>dir08/99944.The_Bhagavad_Gita.html</td>
       <td>31634</td>
@@ -13858,7 +13960,7 @@ Name: rating, dtype: bool</pre>
       <td>0192840509</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/12452.Aesop</td>
-      <td>-560</td>
+      <td>-560.0</td>
       <td>/genres/classics|/genres/childrens|/genres/lit...</td>
       <td>dir14/21348.Aesop_s_Fables.html</td>
       <td>71259</td>
@@ -13871,7 +13973,7 @@ Name: rating, dtype: bool</pre>
       <td>0872205541</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/879.Plato</td>
-      <td>-400</td>
+      <td>-400.0</td>
       <td>/genres/philosophy|/genres/classics|/genres/no...</td>
       <td>dir19/22632.The_Trial_and_Death_of_Socrates.html</td>
       <td>18712</td>
@@ -13884,7 +13986,7 @@ Name: rating, dtype: bool</pre>
       <td>0872203492</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/879.Plato</td>
-      <td>-400</td>
+      <td>-400.0</td>
       <td>/genres/philosophy|/genres/classics|/genres/no...</td>
       <td>dir32/9462.Complete_Works.html</td>
       <td>7454</td>
@@ -13897,7 +13999,7 @@ Name: rating, dtype: bool</pre>
       <td>0865163480</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/879.Plato</td>
-      <td>-390</td>
+      <td>-390.0</td>
       <td>/genres/philosophy|/genres/classics|/genres/no...</td>
       <td>dir45/73945.Apology.html</td>
       <td>11478</td>
@@ -13910,7 +14012,7 @@ Name: rating, dtype: bool</pre>
       <td>0872206335</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/879.Plato</td>
-      <td>-360</td>
+      <td>-360.0</td>
       <td>/genres/philosophy|/genres/classics|/genres/no...</td>
       <td>dir54/30292.Five_Dialogues.html</td>
       <td>9964</td>
@@ -13946,7 +14048,7 @@ Name: rating, dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
@@ -13962,7 +14064,7 @@ Name: rating, dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[20]:</div>
+<div class="prompt output_prompt">Out[43]:</div>
 
 
 
@@ -13998,7 +14100,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;rating_count&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">rating_count</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
@@ -14023,56 +14125,63 @@ dtype: object</pre>
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-21-8bf38ae9d108&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">&lt;ipython-input-56-2b400368004f&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
 <span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>df<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;rating_count&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">=</span>df<span class="ansi-blue-fg">.</span>rating_count<span class="ansi-blue-fg">.</span>astype<span class="ansi-blue-fg">(</span>int<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">      2</span> df<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;review_count&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">=</span>df<span class="ansi-blue-fg">.</span>review_count<span class="ansi-blue-fg">.</span>astype<span class="ansi-blue-fg">(</span>int<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">      3</span> df<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;year&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">=</span>df<span class="ansi-blue-fg">.</span>year<span class="ansi-blue-fg">.</span>astype<span class="ansi-blue-fg">(</span>int<span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">//anaconda/lib/python2.7/site-packages/pandas/core/generic.pyc</span> in <span class="ansi-cyan-fg">astype</span><span class="ansi-blue-fg">(self, dtype, copy, raise_on_error, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2409</span> 
-<span class="ansi-green-intense-fg ansi-bold">   2410</span>         mgr = self._data.astype(
-<span class="ansi-green-fg">-&gt; 2411</span><span class="ansi-red-fg">             dtype=dtype, copy=copy, raise_on_error=raise_on_error, **kwargs)
-</span><span class="ansi-green-intense-fg ansi-bold">   2412</span>         <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_constructor<span class="ansi-blue-fg">(</span>mgr<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>__finalize__<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2413</span> 
+<span class="ansi-green-fg">/home/philk/.virtualenvs/cs109-python27/lib/python2.7/site-packages/pandas/util/_decorators.pyc</span> in <span class="ansi-cyan-fg">wrapper</span><span class="ansi-blue-fg">(*args, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">     89</span>                 <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">     90</span>                     kwargs<span class="ansi-blue-fg">[</span>new_arg_name<span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> new_arg_value
+<span class="ansi-green-fg">---&gt; 91</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">return</span> func<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     92</span>         <span class="ansi-green-fg">return</span> wrapper
+<span class="ansi-green-intense-fg ansi-bold">     93</span>     <span class="ansi-green-fg">return</span> _deprecate_kwarg
 
-<span class="ansi-green-fg">//anaconda/lib/python2.7/site-packages/pandas/core/internals.pyc</span> in <span class="ansi-cyan-fg">astype</span><span class="ansi-blue-fg">(self, dtype, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2502</span> 
-<span class="ansi-green-intense-fg ansi-bold">   2503</span>     <span class="ansi-green-fg">def</span> astype<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">-&gt; 2504</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>apply<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;astype&#39;</span><span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">=</span>dtype<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2505</span> 
-<span class="ansi-green-intense-fg ansi-bold">   2506</span>     <span class="ansi-green-fg">def</span> convert<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">/home/philk/.virtualenvs/cs109-python27/lib/python2.7/site-packages/pandas/core/generic.pyc</span> in <span class="ansi-cyan-fg">astype</span><span class="ansi-blue-fg">(self, dtype, copy, errors, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3408</span>         <span class="ansi-red-fg"># else, only a single dtype is given</span>
+<span class="ansi-green-intense-fg ansi-bold">   3409</span>         new_data = self._data.astype(dtype=dtype, copy=copy, errors=errors,
+<span class="ansi-green-fg">-&gt; 3410</span><span class="ansi-red-fg">                                      **kwargs)
+</span><span class="ansi-green-intense-fg ansi-bold">   3411</span>         <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_constructor<span class="ansi-blue-fg">(</span>new_data<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>__finalize__<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3412</span> 
 
-<span class="ansi-green-fg">//anaconda/lib/python2.7/site-packages/pandas/core/internals.pyc</span> in <span class="ansi-cyan-fg">apply</span><span class="ansi-blue-fg">(self, f, axes, filter, do_integrity_check, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2457</span>                                                  copy=align_copy)
-<span class="ansi-green-intense-fg ansi-bold">   2458</span> 
-<span class="ansi-green-fg">-&gt; 2459</span><span class="ansi-red-fg">             </span>applied <span class="ansi-blue-fg">=</span> getattr<span class="ansi-blue-fg">(</span>b<span class="ansi-blue-fg">,</span> f<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2460</span> 
-<span class="ansi-green-intense-fg ansi-bold">   2461</span>             <span class="ansi-green-fg">if</span> isinstance<span class="ansi-blue-fg">(</span>applied<span class="ansi-blue-fg">,</span> list<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">/home/philk/.virtualenvs/cs109-python27/lib/python2.7/site-packages/pandas/core/internals.pyc</span> in <span class="ansi-cyan-fg">astype</span><span class="ansi-blue-fg">(self, dtype, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3222</span> 
+<span class="ansi-green-intense-fg ansi-bold">   3223</span>     <span class="ansi-green-fg">def</span> astype<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 3224</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>apply<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;astype&#39;</span><span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">=</span>dtype<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3225</span> 
+<span class="ansi-green-intense-fg ansi-bold">   3226</span>     <span class="ansi-green-fg">def</span> convert<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
 
-<span class="ansi-green-fg">//anaconda/lib/python2.7/site-packages/pandas/core/internals.pyc</span> in <span class="ansi-cyan-fg">astype</span><span class="ansi-blue-fg">(self, dtype, copy, raise_on_error, values, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    371</span>     <span class="ansi-green-fg">def</span> astype<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">,</span> copy<span class="ansi-blue-fg">=</span>False<span class="ansi-blue-fg">,</span> raise_on_error<span class="ansi-blue-fg">=</span>True<span class="ansi-blue-fg">,</span> values<span class="ansi-blue-fg">=</span>None<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    372</span>         return self._astype(dtype, copy=copy, raise_on_error=raise_on_error,
-<span class="ansi-green-fg">--&gt; 373</span><span class="ansi-red-fg">                             values=values, **kwargs)
-</span><span class="ansi-green-intense-fg ansi-bold">    374</span> 
-<span class="ansi-green-intense-fg ansi-bold">    375</span>     def _astype(self, dtype, copy=False, raise_on_error=True, values=None,
+<span class="ansi-green-fg">/home/philk/.virtualenvs/cs109-python27/lib/python2.7/site-packages/pandas/core/internals.pyc</span> in <span class="ansi-cyan-fg">apply</span><span class="ansi-blue-fg">(self, f, axes, filter, do_integrity_check, consolidate, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3089</span> 
+<span class="ansi-green-intense-fg ansi-bold">   3090</span>             kwargs<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;mgr&#39;</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> self
+<span class="ansi-green-fg">-&gt; 3091</span><span class="ansi-red-fg">             </span>applied <span class="ansi-blue-fg">=</span> getattr<span class="ansi-blue-fg">(</span>b<span class="ansi-blue-fg">,</span> f<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3092</span>             result_blocks <span class="ansi-blue-fg">=</span> _extend_blocks<span class="ansi-blue-fg">(</span>applied<span class="ansi-blue-fg">,</span> result_blocks<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3093</span> 
 
-<span class="ansi-green-fg">//anaconda/lib/python2.7/site-packages/pandas/core/internals.pyc</span> in <span class="ansi-cyan-fg">_astype</span><span class="ansi-blue-fg">(self, dtype, copy, raise_on_error, values, klass, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    401</span>             <span class="ansi-green-fg">if</span> values <span class="ansi-green-fg">is</span> None<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    402</span>                 <span class="ansi-red-fg"># _astype_nansafe works fine with 1-d only</span>
-<span class="ansi-green-fg">--&gt; 403</span><span class="ansi-red-fg">                 </span>values <span class="ansi-blue-fg">=</span> com<span class="ansi-blue-fg">.</span>_astype_nansafe<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>values<span class="ansi-blue-fg">.</span>ravel<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">,</span> copy<span class="ansi-blue-fg">=</span>True<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    404</span>                 values <span class="ansi-blue-fg">=</span> values<span class="ansi-blue-fg">.</span>reshape<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>values<span class="ansi-blue-fg">.</span>shape<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    405</span>             newb = make_block(values,
+<span class="ansi-green-fg">/home/philk/.virtualenvs/cs109-python27/lib/python2.7/site-packages/pandas/core/internals.pyc</span> in <span class="ansi-cyan-fg">astype</span><span class="ansi-blue-fg">(self, dtype, copy, errors, values, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    469</span>     <span class="ansi-green-fg">def</span> astype<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">,</span> copy<span class="ansi-blue-fg">=</span>False<span class="ansi-blue-fg">,</span> errors<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;raise&#39;</span><span class="ansi-blue-fg">,</span> values<span class="ansi-blue-fg">=</span>None<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    470</span>         return self._astype(dtype, copy=copy, errors=errors, values=values,
+<span class="ansi-green-fg">--&gt; 471</span><span class="ansi-red-fg">                             **kwargs)
+</span><span class="ansi-green-intense-fg ansi-bold">    472</span> 
+<span class="ansi-green-intense-fg ansi-bold">    473</span>     def _astype(self, dtype, copy=False, errors=&#39;raise&#39;, values=None,
 
-<span class="ansi-green-fg">//anaconda/lib/python2.7/site-packages/pandas/core/common.pyc</span> in <span class="ansi-cyan-fg">_astype_nansafe</span><span class="ansi-blue-fg">(arr, dtype, copy)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2729</span>     <span class="ansi-green-fg">elif</span> arr<span class="ansi-blue-fg">.</span>dtype <span class="ansi-blue-fg">==</span> np<span class="ansi-blue-fg">.</span>object_ <span class="ansi-green-fg">and</span> np<span class="ansi-blue-fg">.</span>issubdtype<span class="ansi-blue-fg">(</span>dtype<span class="ansi-blue-fg">.</span>type<span class="ansi-blue-fg">,</span> np<span class="ansi-blue-fg">.</span>integer<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   2730</span>         <span class="ansi-red-fg"># work around NumPy brokenness, #1987</span>
-<span class="ansi-green-fg">-&gt; 2731</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> lib<span class="ansi-blue-fg">.</span>astype_intsafe<span class="ansi-blue-fg">(</span>arr<span class="ansi-blue-fg">.</span>ravel<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>reshape<span class="ansi-blue-fg">(</span>arr<span class="ansi-blue-fg">.</span>shape<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2732</span> 
-<span class="ansi-green-intense-fg ansi-bold">   2733</span>     <span class="ansi-green-fg">if</span> copy<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">/home/philk/.virtualenvs/cs109-python27/lib/python2.7/site-packages/pandas/core/internals.pyc</span> in <span class="ansi-cyan-fg">_astype</span><span class="ansi-blue-fg">(self, dtype, copy, errors, values, klass, mgr, raise_on_error, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    519</span> 
+<span class="ansi-green-intense-fg ansi-bold">    520</span>                 <span class="ansi-red-fg"># _astype_nansafe works fine with 1-d only</span>
+<span class="ansi-green-fg">--&gt; 521</span><span class="ansi-red-fg">                 </span>values <span class="ansi-blue-fg">=</span> astype_nansafe<span class="ansi-blue-fg">(</span>values<span class="ansi-blue-fg">.</span>ravel<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">,</span> copy<span class="ansi-blue-fg">=</span>True<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    522</span>                 values <span class="ansi-blue-fg">=</span> values<span class="ansi-blue-fg">.</span>reshape<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>shape<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    523</span> 
 
-<span class="ansi-green-fg">pandas/lib.pyx</span> in <span class="ansi-cyan-fg">pandas.lib.astype_intsafe (pandas/lib.c:14844)</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">/home/philk/.virtualenvs/cs109-python27/lib/python2.7/site-packages/pandas/core/dtypes/cast.pyc</span> in <span class="ansi-cyan-fg">astype_nansafe</span><span class="ansi-blue-fg">(arr, dtype, copy)</span>
+<span class="ansi-green-intense-fg ansi-bold">    623</span>     <span class="ansi-green-fg">elif</span> arr<span class="ansi-blue-fg">.</span>dtype <span class="ansi-blue-fg">==</span> np<span class="ansi-blue-fg">.</span>object_ <span class="ansi-green-fg">and</span> np<span class="ansi-blue-fg">.</span>issubdtype<span class="ansi-blue-fg">(</span>dtype<span class="ansi-blue-fg">.</span>type<span class="ansi-blue-fg">,</span> np<span class="ansi-blue-fg">.</span>integer<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    624</span>         <span class="ansi-red-fg"># work around NumPy brokenness, #1987</span>
+<span class="ansi-green-fg">--&gt; 625</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> lib<span class="ansi-blue-fg">.</span>astype_intsafe<span class="ansi-blue-fg">(</span>arr<span class="ansi-blue-fg">.</span>ravel<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>reshape<span class="ansi-blue-fg">(</span>arr<span class="ansi-blue-fg">.</span>shape<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    626</span> 
+<span class="ansi-green-intense-fg ansi-bold">    627</span>     <span class="ansi-green-fg">if</span> dtype<span class="ansi-blue-fg">.</span>name <span class="ansi-green-fg">in</span> <span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;datetime64&#34;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;timedelta64&#34;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
 
-<span class="ansi-green-fg">pandas/src/util.pxd</span> in <span class="ansi-cyan-fg">util.set_value_at (pandas/lib.c:63086)</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">pandas/_libs/lib.pyx</span> in <span class="ansi-cyan-fg">pandas._libs.lib.astype_intsafe (pandas/_libs/lib.c:16264)</span><span class="ansi-blue-fg">()</span>
+
+<span class="ansi-green-fg">pandas/_libs/src/util.pxd</span> in <span class="ansi-cyan-fg">util.set_value_at_unsafe (pandas/_libs/lib.c:73298)</span><span class="ansi-blue-fg">()</span>
 
 <span class="ansi-red-fg">ValueError</span>: invalid literal for long() with base 10: &#39;None&#39;</pre>
 </div>
@@ -14093,7 +14202,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">year</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span>
@@ -14109,12 +14218,25 @@ dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[22]:</div>
+<div class="prompt output_prompt">Out[69]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -14136,7 +14258,7 @@ dtype: object</pre>
       <th>2442</th>
       <td>4.23</td>
       <td>526</td>
-      <td></td>
+      <td>NaN</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/623606.A...</td>
       <td>NaN</td>
@@ -14149,11 +14271,11 @@ dtype: object</pre>
       <th>2869</th>
       <td>4.61</td>
       <td>2</td>
-      <td></td>
+      <td>NaN</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/8182217....</td>
       <td>NaN</td>
-      <td></td>
+      <td>NaN</td>
       <td>dir29/22031070-my-death-experiences---a-preach...</td>
       <td>23</td>
       <td>My Death Experiences - A Preacherâs 18 Apoca...</td>
@@ -14166,7 +14288,7 @@ dtype: object</pre>
       <td>None</td>
       <td>None</td>
       <td>NaN</td>
-      <td></td>
+      <td>NaN</td>
       <td>dir37/9658936-harry-potter.html</td>
       <td>None</td>
       <td>None</td>
@@ -14179,7 +14301,7 @@ dtype: object</pre>
       <td>None</td>
       <td>None</td>
       <td>NaN</td>
-      <td></td>
+      <td>NaN</td>
       <td>dir53/113138.The_Winner.html</td>
       <td>None</td>
       <td>None</td>
@@ -14201,7 +14323,7 @@ dtype: object</pre>
       <th>5658</th>
       <td>4.32</td>
       <td>44</td>
-      <td></td>
+      <td>NaN</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/25307.Ro...</td>
       <td>NaN</td>
@@ -14214,7 +14336,7 @@ dtype: object</pre>
       <th>5683</th>
       <td>4.56</td>
       <td>204</td>
-      <td></td>
+      <td>NaN</td>
       <td>good_reads:book</td>
       <td>https://www.goodreads.com/author/show/3097905....</td>
       <td>NaN</td>
@@ -14245,7 +14367,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">year</span><span class="o">.</span><span class="n">notnull</span><span class="p">()]</span>
@@ -14262,7 +14384,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[23]:</div>
+<div class="prompt output_prompt">Out[73]:</div>
 
 
 
@@ -14288,7 +14410,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;rating_count&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">rating_count</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
@@ -14303,7 +14425,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[76]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
@@ -14319,7 +14441,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[27]:</div>
+<div class="prompt output_prompt">Out[76]:</div>
 
 
 
